@@ -1,4 +1,4 @@
-# frontend
+# Frontend to urlshortener
 
 Front end for TINY URL API
 
@@ -11,17 +11,18 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
 
-
-## Change localhost to the port that the API is running on
+## Installation
 
 * `git clone <repository-url>` this repository
-* `cd frontend/app/controller/application.js`
 
-## Installation
+### First change localhost port
+* `cd frontend/app/controller/`
 ### On line 11 change port in application.js
+* `nano application.js` 
 
 * `cd frontend/app/adapter/application.js`
 ### On line 4 change port in application.js
+* `nano application.js`
 
 * `npm install`
 
