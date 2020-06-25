@@ -39,7 +39,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ## NOTE:
 
-#### If you change ports in `frontend/app/controller/` and `frontend/app/adapter/application.js`, you must change ports in the Dockerfile, docker-compose, etc.. in [urlshortener](https://github.com/beauvilerobed/urlsshortener) repo to the exact same thing. 
+#### If you change ports in `frontend/app/controller/application.js` and `frontend/app/adapter/application.js`, you must change ports in the Dockerfile, docker-compose, etc.. in [urlshortener](https://github.com/beauvilerobed/urlsshortener) repo to the exact same thing. 
 ##### Check Notes section of [README.md](https://github.com/beauvilerobed/urlshortener/blob/master/README.md) in [urlshortener](https://github.com/beauvilerobed/urlsshortener) repo
 
 ## Also...
@@ -52,26 +52,26 @@ Make use of the many generators for code, try `ember help generate` for more det
 ### On line 11 change port in application.js
 
 # Docker quick start
+### Git
+```
+cd frontend
+```
 
-### Run in Docker
+### Build in Docker
 ```bash
-docker-compose up
+docker build -t file-name .
+```
+
+### Run in Docker as container 
+```bash
+docker  run -it -p <port>:4200 file-name
 # use -d flag to run in background
+docker run -d -p <port>:4200 file-name
 ```
 
-### Tear down
+### Delete contianer
 ```bash
-docker-compose down
-```
-
-### To be able to edit files, add volume to compose file
-```bash
-volumes: ['./:/usr/src/app']
-```
-
-### To re-build
-```bash
-docker-compose build
+docker rm -f file-name
 ```
 
 ## Further Reading / Useful Links
