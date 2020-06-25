@@ -1,7 +1,6 @@
 # frontend
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Front end for TINY URL API
 
 ## Prerequisites
 
@@ -12,10 +11,18 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
 
-## Installation
+
+## Change localhost to the port that the API is running on
 
 * `git clone <repository-url>` this repository
-* `cd frontend`
+* `cd frontend/app/controller/application.js`
+
+## Installation
+### On line 11 change port in application.js
+
+* `cd frontend/app/adapter/application.js`
+### On line 4 change port in application.js
+
 * `npm install`
 
 ## Running / Development

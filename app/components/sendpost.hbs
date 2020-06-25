@@ -1,0 +1,7 @@
+<form {{action "submit" on="submit"}}>
+    {{input type="text" value=foobar}}
+    <button type="submit">Save</button>
+</form>
+{{#if errorMessage}}
+  {{errorMessage}}
+{{/if}}

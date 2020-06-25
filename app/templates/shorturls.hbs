@@ -1,0 +1,18 @@
+<div id="block1" class="container">
+    <div id="listofurls" class="list-group">
+        <div style="padding-top: 20px;">
+            <p class="list-group-item list-group-item-action overflow-auto">
+            {{model.longUrl}}
+            </p>
+        </div>  
+        <a href="{{model.shortUrl}}"> 
+    <h6 class="text-center">Shortened</h6>  
+            <p class="list-group-item list-group-item-primary">
+            {{model.shortUrl}} 
+            </p>
+        </a>
+    </div>
+</div>
+
+{{outlet}}
+

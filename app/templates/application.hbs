@@ -1,5 +1,25 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="http://localhost:4200">Home</a>
+</nav>
 
+<div class="jumbotron">
+  <h1 class="text-center">Welcome to TINY URL</h1>
+  <p class="text-center">We hope you find the url you've been looking for!</p>
+
+</div>
+
+<div class="container">
+
+  <div>
+      <form {{action "save" on="submit"}}>
+          <div class="form-group">
+          {{input type="url" value=foobar id="myInput" class="form-control"}}
+          </div>
+          <div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Shorten</button>
+          </div>
+      </form>
+  </div> 
+</div>
+  
 {{outlet}}
