@@ -14,8 +14,14 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
+* `cd frontend`
+* `npm install`
 
-### First change localhost port
+## note
+
+### localhost ports are located in controller and application folder
+#### If you change ports there you must change ports in Docker and docker-compose file in [urlshortener](https://github.com/beauvilerobed/urlsshortener) repo.
+
 * `cd frontend/app/controller/`
 ### On line 11 change port in application.js
 * `nano application.js` 
@@ -23,8 +29,6 @@ You will need the following things properly installed on your computer.
 * `cd frontend/app/adapter/application.js`
 ### On line 4 change port in application.js
 * `nano application.js`
-
-* `npm install`
 
 ## Running / Development
 
