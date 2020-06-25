@@ -9,7 +9,7 @@ export default Ember.Controller.extend({
       let self = this;
       $.ajax({
         //change port here
-        url: "http://localhost:9000/api/url/shorten",
+        url: "http://localhost:5000/api/url/shorten",
         type: "POST",
         contentType: "application/json;charset=utf-8",
         data: JSON.stringify({"longUrl": $("#myInput").val()}),
