@@ -15,7 +15,7 @@ You will need the following things properly installed on your computer.
 
 * `git clone https://github.com/beauvilerobed/frontend_to_urlshortener.git`
 * `cd frontend_to_urlshortener`
-* `npm`
+* `npm install`
 
 ## Running / Development
 ### Frist
