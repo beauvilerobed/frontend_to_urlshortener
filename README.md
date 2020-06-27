@@ -18,10 +18,10 @@ You will need the following things properly installed on your computer.
 * `npm install`
 
 ## Running / Development
-### Frist
+### First
 Run [urlshortener](https://github.com/beauvilerobed/urlsshortener) API
 
-For inrtructions go to:
+For instructions go to:
 
 [README.md](https://github.com/beauvilerobed/urlshortener/blob/master/README.md) in [urlshortener](https://github.com/beauvilerobed/urlsshortener) repo
 
